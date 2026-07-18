@@ -1,4 +1,5 @@
 import type {
+  ClientLogo,
   FeatureHighlight,
   Feature,
   FooterLinkGroup,
@@ -126,6 +127,23 @@ export const packages: PackageItem[] = [
       "Custom Backdrop",
     ],
     isPopular: false,
+  },
+];
+
+export const clientLogos: ClientLogo[] = [
+  {
+    id: "client-1",
+    src: "/images/client/client-1.png",
+    alt: "Logo klien Movement Photobooth",
+    width: 1260,
+    height: 345,
+  },
+  {
+    id: "client-2",
+    src: "/images/client/client-2.png",
+    alt: "Logo klien Movement Photobooth",
+    width: 402,
+    height: 94,
   },
 ];
 

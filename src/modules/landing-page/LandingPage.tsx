@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/modules/landing-page/components/hero/HeroSection";
+import { ClientsSection } from "@/modules/landing-page/components/clients/ClientsSection";
 import { FeaturesSection } from "@/modules/landing-page/components/features/FeaturesSection";
 import { PackagesSection } from "@/modules/landing-page/components/packages/PackagesSection";
 import { GallerySection } from "@/modules/landing-page/components/gallery/GallerySection";
@@ -13,6 +14,7 @@ export function LandingPage() {
       <Navbar />
       <main className="flex-1">
         <HeroSection />
+        <ClientsSection />
         <FeaturesSection />
         <PackagesSection />
         <GallerySection />
