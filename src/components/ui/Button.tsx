@@ -4,11 +4,11 @@ type ButtonVariant = "filled" | "outline" | "ghost";
 type ButtonSize = "sm" | "md";
 
 const baseStyles =
-  "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 disabled:opacity-60";
+  "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 disabled:opacity-60";
 
 const variantStyles: Record<ButtonVariant, string> = {
-  filled: "bg-brand-500 text-white hover:bg-brand-600",
-  outline: "border border-brand-200 text-brand-600 hover:bg-brand-50",
+  filled: "bg-brand-500 text-white shadow-sm hover:bg-brand-600 hover:shadow",
+  outline: "border border-brand-200 text-brand-600 hover:border-brand-400 hover:bg-brand-50",
   ghost: "text-brand-600 hover:bg-brand-50",
 };
 

@@ -8,7 +8,9 @@ interface HeroHighlightProps {
 export function HeroHighlight({ highlight }: HeroHighlightProps) {
   return (
     <div className="flex flex-col items-center gap-2 text-center">
-      <Icon name={highlight.icon} className="h-7 w-7 text-brand-500" />
+      <span className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-brand-100 text-brand-500">
+        <Icon name={highlight.icon} className="h-6 w-6" />
+      </span>
       <span className="max-w-[8rem] text-xs font-medium leading-snug text-ink">
         {highlight.label}
       </span>
