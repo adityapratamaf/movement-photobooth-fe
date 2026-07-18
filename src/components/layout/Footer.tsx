@@ -1,7 +1,8 @@
+import { RiArrowRightUpLine } from "@remixicon/react";
+
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import {
   brand,
@@ -14,10 +15,10 @@ export function Footer() {
   return (
     <footer className="border-t border-brand-100 bg-surface-soft">
       <Container className="py-12">
-        <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-11">
+          <div className="sm:col-span-2 lg:col-span-3">
             <Logo />
-            <p className="mt-4 max-w-sm text-sm text-ink-muted">
+            <p className="mt-4 max-w-xs text-sm text-ink-muted">
               Photobooth profesional yang siap membuat setiap momen di acara Anda menjadi
               tak terlupakan.
             </p>
@@ -39,9 +40,9 @@ export function Footer() {
           </div>
 
           {footerGroups.map((group) => (
-            <nav key={group.title} aria-label={group.title}>
+            <nav key={group.title} aria-label={group.title} className="lg:col-span-2">
               <h2 className="text-sm font-semibold text-ink">{group.title}</h2>
-              <ul className="mt-4 flex flex-col gap-2">
+              <ul className="mt-4 flex flex-col gap-2.5">
                 {group.links.map((link) => (
                   <li key={link.label}>
                     <a
@@ -56,13 +57,25 @@ export function Footer() {
             </nav>
           ))}
 
-          <div>
+          <div className="lg:col-span-2">
+            <h2 className="text-sm font-semibold text-ink">Kontak Kami</h2>
+            <ul className="mt-4 flex flex-col gap-3">
+              {contactInfo.map((item) => (
+                <li key={item.label} className="flex items-start gap-2 text-sm text-ink-muted">
+                  <Icon name={item.icon} className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
+                  {item.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="sm:col-span-2 lg:col-span-2">
             <h2 className="text-sm font-semibold text-ink">Newsletter</h2>
             <p className="mt-4 text-sm text-ink-muted">
               Dapatkan info promo dan tips acara menarik dari kami.
             </p>
             <form
-              className="mt-4 flex gap-2"
+              className="relative mt-4"
               action="#"
               aria-label="Berlangganan newsletter"
             >
@@ -75,24 +88,21 @@ export function Footer() {
                 name="email"
                 placeholder="Masukkan email Anda"
                 required
+                className="pr-14"
               />
-              <Button type="submit" size="sm" aria-label="Berlangganan">
-                <Icon name="mail" className="h-5 w-5" aria-hidden />
-              </Button>
+              <button
+                type="submit"
+                aria-label="Berlangganan"
+                className="absolute right-1.5 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-brand-500 text-white transition-colors hover:bg-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400"
+              >
+                <RiArrowRightUpLine className="h-4 w-4" aria-hidden />
+              </button>
             </form>
           </div>
         </div>
 
         <div className="mt-10 border-t border-brand-100 pt-6">
-          <ul className="flex flex-col gap-3 text-sm text-ink-muted sm:flex-row sm:flex-wrap sm:gap-6">
-            {contactInfo.map((item) => (
-              <li key={item.label} className="flex items-center gap-2">
-                <Icon name={item.icon} className="h-4 w-4 text-brand-500" />
-                {item.label}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-center text-xs text-ink-muted sm:text-left">
+          <p className="text-center text-xs text-ink-muted">
             © {new Date().getFullYear()} {brand.name} {brand.suffix}. All rights reserved.
           </p>
         </div>
