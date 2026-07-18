@@ -57,6 +57,14 @@ export interface ClientLogo {
   height: number;
 }
 
+export interface GalleryPhoto {
+  id: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
 export interface Testimonial {
   id: string;
   quote: string;

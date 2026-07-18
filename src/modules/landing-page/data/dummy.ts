@@ -4,6 +4,7 @@ import type {
   Feature,
   FooterLinkGroup,
   GalleryImage,
+  GalleryPhoto,
   NavItem,
   PackageItem,
   SocialLink,
@@ -147,36 +148,48 @@ export const clientLogos: ClientLogo[] = [
   },
 ];
 
-export const galleryImages: GalleryImage[] = [
+export const galleryImages: GalleryPhoto[] = [
   {
     id: "g1",
     src: "/images/galeri/galeri-1.png",
     alt: "Momen seru tamu di Movement Photobooth",
+    width: 1024,
+    height: 1536,
   },
   {
     id: "g2",
     src: "/images/galeri/galeri-2.png",
     alt: "Hasil cetak foto Movement Photobooth di sebuah acara",
+    width: 390,
+    height: 1541,
   },
   {
     id: "g3",
     src: "/images/galeri/galeri-3.png",
     alt: "Keseruan tamu berpose di Movement Photobooth",
+    width: 1231,
+    height: 961,
   },
   {
     id: "g4",
     src: "/images/galeri/galeri-4.png",
     alt: "Properti dan booth foto Movement Photobooth",
+    width: 897,
+    height: 1458,
   },
   {
     id: "g5",
     src: "/images/galeri/galeri-5.png",
     alt: "Tamu menikmati keseruan Movement Photobooth",
+    width: 462,
+    height: 1678,
   },
   {
     id: "g6",
     src: "/images/galeri/galeri-6.png",
     alt: "Kenangan acara bersama Movement Photobooth",
+    width: 1024,
+    height: 1536,
   },
 ];
 
