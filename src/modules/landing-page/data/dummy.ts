@@ -163,6 +163,51 @@ export const testimonials: Testimonial[] = [
     avatar:
       "https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=200&q=80",
   },
+  {
+    id: "t4",
+    quote:
+      "Antriannya cepat walau tamu ratusan. Operatornya sabar dan ramah membantu semua orang berpose.",
+    name: "Nadia & Reza",
+    location: "Depok",
+    avatar:
+      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=200&q=80",
+  },
+  {
+    id: "t5",
+    quote:
+      "Kualitas cetaknya bagus banget, warnanya tajam dan nggak luntur. Jadi kenang-kenangan yang berkesan.",
+    name: "Farhan Maulana",
+    location: "Tangerang",
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+  },
+  {
+    id: "t6",
+    quote:
+      "Booth-nya estetik dan instagramable. Acara ulang tahun anak kami jadi makin meriah dan seru.",
+    name: "Clara Wijaya",
+    location: "Bekasi",
+    avatar:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+  },
+  {
+    id: "t7",
+    quote:
+      "Booking sampai hari-H sangat gampang. Setup rapi, tepat waktu, dan hasilnya melebihi ekspektasi.",
+    name: "Bagus Pratama",
+    location: "Bogor",
+    avatar:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
+  },
+  {
+    id: "t8",
+    quote:
+      "Properti dan filternya banyak pilihan. Tamu dari yang muda sampai orang tua semua ikut berfoto.",
+    name: "Melati & Yoga",
+    location: "Bandung",
+    avatar:
+      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80",
+  },
 ];
 
 export const footerGroups: FooterLinkGroup[] = [

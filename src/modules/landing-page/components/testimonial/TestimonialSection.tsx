@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 import { cn } from "@/lib/utils";
@@ -9,9 +9,12 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TestimonialCard } from "@/modules/landing-page/components/testimonial/TestimonialCard";
 import { testimonials } from "@/modules/landing-page/data/dummy";
 
+const AUTOPLAY_DELAY = 3500;
+
 export function TestimonialSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "start", loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const isPausedRef = useRef(false);
 
   const onSelect = useCallback(() => {
     if (emblaApi) {
@@ -29,8 +32,16 @@ export function TestimonialSection() {
     };
   }, [emblaApi, onSelect]);
 
+  useEffect(() => {
+    if (!emblaApi) return;
+    const interval = setInterval(() => {
+      if (!isPausedRef.current) emblaApi.scrollNext();
+    }, AUTOPLAY_DELAY);
+    return () => clearInterval(interval);
+  }, [emblaApi]);
+
   return (
-    <section id="testimoni" className="bg-surface">
+    <section id="testimoni" className="bg-surface-soft">
       <Container className="py-12 lg:py-16">
         <SectionHeading
           className="mx-auto"
@@ -39,7 +50,16 @@ export function TestimonialSection() {
           highlight="Kami"
         />
 
-        <div className="mt-10 overflow-hidden" ref={emblaRef}>
+        <div
+          className="mt-10 overflow-hidden"
+          ref={emblaRef}
+          onMouseEnter={() => {
+            isPausedRef.current = true;
+          }}
+          onMouseLeave={() => {
+            isPausedRef.current = false;
+          }}
+        >
           <ul className="flex -ml-6">
             {testimonials.map((testimonial) => (
               <li
@@ -52,7 +72,7 @@ export function TestimonialSection() {
           </ul>
         </div>
 
-        <div className="mt-8 flex justify-center gap-2">
+        <div className="mt-8 flex flex-wrap justify-center gap-2">
           {testimonials.map((testimonial, index) => (
             <button
               key={testimonial.id}

@@ -10,19 +10,19 @@ interface TestimonialCardProps {
 
 export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
-    <Card className="h-full bg-surface-soft">
-      <figure className="flex h-full flex-col gap-4">
-        <RiDoubleQuotesL className="h-8 w-8 text-brand-300" aria-hidden />
+    <Card className="h-full">
+      <figure className="flex h-full flex-col gap-5">
+        <RiDoubleQuotesL className="h-10 w-10 text-brand-400" aria-hidden />
         <blockquote className="text-sm leading-relaxed text-ink-muted">
           {testimonial.quote}
         </blockquote>
-        <figcaption className="mt-auto flex items-center gap-3">
-          <span className="relative h-10 w-10 overflow-hidden rounded-full">
+        <figcaption className="mt-auto flex items-center gap-3 border-t border-brand-100 pt-4">
+          <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full">
             <Image
               src={testimonial.avatar}
               alt={`Foto ${testimonial.name}`}
               fill
-              sizes="40px"
+              sizes="44px"
               className="object-cover"
             />
           </span>
