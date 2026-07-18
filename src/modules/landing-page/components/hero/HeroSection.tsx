@@ -18,7 +18,10 @@ export function HeroSection() {
             </span>
 
             <h1 className="text-4xl font-bold leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
-              Abadikan Setiap Momen{" "}
+              Abadikan
+              <br />
+              Setiap Momen
+              <br />
               <span className="text-brand-500">Bersama Kami</span>
             </h1>
 
