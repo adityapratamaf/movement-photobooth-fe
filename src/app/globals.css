@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1f2937;
+  --background: #fafafa;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -11,19 +11,30 @@
 
   --font-sans: var(--font-inter);
 
-  --color-brand-50: #fff1f5;
-  --color-brand-100: #ffe4ec;
-  --color-brand-200: #fecdd8;
-  --color-brand-300: #fda4bb;
-  --color-brand-400: #fb6f92;
-  --color-brand-500: #f43f6f;
-  --color-brand-600: #e11d55;
-  --color-brand-700: #be1247;
+  /* Forest Green + Lime Accent — semantic tokens */
+  --color-primary: #3b7d2a;
+  --color-primary-hover: #2f6821;
+  --color-secondary: #5e9f45;
+  --color-accent: #b8e36b;
+  --color-border: #e5e7eb;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 
-  --color-ink: #1f2937;
-  --color-ink-muted: #6b7280;
+  /* Brand scale (green) — consumed by all components */
+  --color-brand-50: #eff6e9;
+  --color-brand-100: #e5e7eb;
+  --color-brand-200: #c4e4a5;
+  --color-brand-300: #b8e36b;
+  --color-brand-400: #5e9f45;
+  --color-brand-500: #3b7d2a;
+  --color-brand-600: #2f6821;
+  --color-brand-700: #24521a;
+
+  --color-ink: #0f172a;
+  --color-ink-muted: #64748b;
   --color-surface: #ffffff;
-  --color-surface-soft: #fdf2f6;
+  --color-surface-soft: #f1f6ea;
 }
 
 body {
