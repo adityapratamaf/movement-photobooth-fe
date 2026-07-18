@@ -10,11 +10,12 @@ export function FeaturesSection() {
     <section id="layanan" className="bg-surface">
       <Container className="py-16 lg:py-20">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-          <Reveal className="flex flex-col items-start gap-6 lg:col-span-3">
+          <Reveal className="flex flex-col items-start gap-6 lg:col-span-4">
             <SectionHeading
               align="left"
               eyebrow="Mengapa Memilih Kami"
-              titleBefore="Momen Berkesan "
+              titleBefore="Momen Berkesan"
+              breakBeforeHighlight
               highlight="Tak Terlupakan"
             />
             <p className="text-base text-ink-muted lg:text-lg">
@@ -24,7 +25,7 @@ export function FeaturesSection() {
             <Button href={brand.whatsappUrl}>Selengkapnya</Button>
           </Reveal>
 
-          <div className="lg:col-span-9">
+          <div className="lg:col-span-8">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {features.map((feature, index) => (
                 <Reveal key={feature.title} delay={index * 0.1} className="h-full">

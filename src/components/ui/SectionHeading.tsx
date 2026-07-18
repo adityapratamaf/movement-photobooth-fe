@@ -5,6 +5,7 @@ interface SectionHeadingProps {
   titleBefore?: string;
   highlight?: string;
   titleAfter?: string;
+  breakBeforeHighlight?: boolean;
   subtitle?: string;
   align?: "left" | "center";
   className?: string;
@@ -15,6 +16,7 @@ export function SectionHeading({
   titleBefore,
   highlight,
   titleAfter,
+  breakBeforeHighlight = false,
   subtitle,
   align = "center",
   className,
@@ -35,6 +37,7 @@ export function SectionHeading({
 
       <h2 className="max-w-2xl text-4xl font-bold leading-tight text-ink sm:text-5xl">
         {titleBefore}
+        {breakBeforeHighlight ? <br /> : null}
         {highlight ? <span className="text-brand-500">{highlight}</span> : null}
         {titleAfter}
       </h2>
