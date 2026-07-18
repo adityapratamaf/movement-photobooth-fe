@@ -10,7 +10,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="border-t border-brand-100 bg-surface-soft">
+    <footer id="kontak" className="border-t border-brand-100 bg-surface-soft">
       <Container className="py-16 lg:py-20">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">

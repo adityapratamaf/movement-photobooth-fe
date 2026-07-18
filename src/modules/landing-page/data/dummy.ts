@@ -17,11 +17,10 @@ export const brand = {
 
 export const navItems: NavItem[] = [
   { label: "Beranda", href: "#beranda" },
-  { label: "Layanan", href: "#layanan" },
-  { label: "Paket", href: "#paket" },
+  { label: "Layanan", href: "#paket" },
   { label: "Galeri", href: "#galeri" },
   { label: "Testimoni", href: "#testimoni" },
-  { label: "Tentang Kami", href: "#tentang" },
+  { label: "Kontak", href: "#kontak" },
 ];
 
 export const heroHighlights: FeatureHighlight[] = [
