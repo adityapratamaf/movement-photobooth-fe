@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Icon } from "@/components/ui/Icon";
@@ -67,10 +69,20 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-5 pt-5">
-          <p className="text-center text-xs text-ink-muted">
+        <div className="mt-6 flex flex-col items-center justify-between gap-3 pt-5 sm:flex-row">
+          <p className="text-xs text-ink-muted">
             © {new Date().getFullYear()} {brand.name} {brand.suffix}. All rights reserved.
           </p>
+          <span className="flex items-center gap-1.5 text-xs text-ink-muted">
+            Digital Experience in Partnership with 
+            <Image
+              src="/images/general/logo-mediaine.png"
+              alt="Mediaine"
+              width={72}
+              height={17}
+              className="h-4 w-auto"
+            />
+          </span>
         </div>
       </Container>
     </footer>
