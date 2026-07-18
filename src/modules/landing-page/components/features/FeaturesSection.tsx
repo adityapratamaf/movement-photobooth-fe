@@ -8,7 +8,7 @@ import { features, brand } from "@/modules/landing-page/data/dummy";
 export function FeaturesSection() {
   return (
     <section id="layanan" className="bg-surface">
-      <Container className="py-12 lg:py-16">
+      <Container className="py-5 lg:py-5">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <Reveal className="flex flex-col items-start gap-6 lg:col-span-3">
             <SectionHeading

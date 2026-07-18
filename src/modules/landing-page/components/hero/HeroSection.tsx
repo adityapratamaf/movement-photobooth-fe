@@ -52,7 +52,7 @@ export function HeroSection() {
       />
 
       <Container className="relative">
-        <div className="grid items-center gap-10 py-12 lg:min-h-[34rem] lg:grid-cols-2 lg:py-16">
+        <div className="grid items-center gap-10 py-5 lg:min-h-[34rem] lg:grid-cols-2 lg:py-5">
           <Reveal className="flex flex-col gap-6">
             <span className="text-sm font-semibold uppercase tracking-widest text-brand-500">
               Movement Photobooth

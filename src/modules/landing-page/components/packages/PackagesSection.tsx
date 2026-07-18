@@ -9,7 +9,7 @@ import { packages, brand } from "@/modules/landing-page/data/dummy";
 export function PackagesSection() {
   return (
     <section id="paket" className="bg-surface-soft">
-      <Container className="py-12 lg:py-16">
+      <Container className="py-5 lg:py-5">
         <SectionHeading
           className="mx-auto"
           eyebrow="Layanan Kami"

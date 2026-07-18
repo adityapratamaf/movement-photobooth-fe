@@ -42,7 +42,7 @@ export function TestimonialSection() {
 
   return (
     <section id="testimoni" className="bg-surface-soft">
-      <Container className="py-12 lg:py-16">
+      <Container className="py-5 lg:py-5">
         <SectionHeading
           className="mx-auto"
           eyebrow="Testimoni"

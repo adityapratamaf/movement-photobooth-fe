@@ -9,7 +9,7 @@ import { brand } from "@/modules/landing-page/data/dummy";
 export function CtaSection() {
   return (
     <section id="tentang" className="bg-surface">
-      <Container className="py-8 lg:py-12">
+      <Container className="py-5 lg:py-5">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl bg-brand-500 px-6 py-12 sm:px-12">
             <Image
