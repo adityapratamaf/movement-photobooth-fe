@@ -41,7 +41,8 @@ export function TestimonialSection() {
   }, [emblaApi]);
 
   return (
-    <section id="testimoni" className="bg-surface-soft">
+    <section id="testimoni">
+      {/* Background pink dinonaktifkan (sebelumnya className="bg-surface-soft") */}
       <Container className="py-5 lg:py-5">
         <SectionHeading
           className="mx-auto"
