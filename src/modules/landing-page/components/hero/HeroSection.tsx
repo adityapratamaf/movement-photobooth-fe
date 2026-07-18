@@ -107,6 +107,7 @@ export function HeroSection() {
                 src={heroImage}
                 alt="Pasangan bahagia berfoto di Movement Photobooth"
                 fill
+                priority
                 sizes="100vw"
                 className="object-cover object-center"
               />
