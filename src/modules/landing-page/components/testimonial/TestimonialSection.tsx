@@ -40,11 +40,11 @@ export function TestimonialSection() {
         />
 
         <div className="mt-10 overflow-hidden" ref={emblaRef}>
-          <ul className="flex gap-6">
+          <ul className="flex -ml-6">
             {testimonials.map((testimonial) => (
               <li
                 key={testimonial.id}
-                className="min-w-0 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+                className="min-w-0 flex-[0_0_100%] pl-6 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
               >
                 <TestimonialCard testimonial={testimonial} />
               </li>
