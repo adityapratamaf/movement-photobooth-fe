@@ -150,33 +150,33 @@ export const clientLogos: ClientLogo[] = [
 export const galleryImages: GalleryImage[] = [
   {
     id: "g1",
-    src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80",
-    alt: "Tamu berpose ceria di photobooth pernikahan",
+    src: "/images/galeri/galeri-1.png",
+    alt: "Momen seru tamu di Movement Photobooth",
   },
   {
     id: "g2",
-    src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80",
-    alt: "Momen tawa bersama teman di acara",
+    src: "/images/galeri/galeri-2.png",
+    alt: "Hasil cetak foto Movement Photobooth di sebuah acara",
   },
   {
     id: "g3",
-    src: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80",
-    alt: "Kelompok teman menikmati properti photobooth",
+    src: "/images/galeri/galeri-3.png",
+    alt: "Keseruan tamu berpose di Movement Photobooth",
   },
   {
     id: "g4",
-    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
-    alt: "Suasana pesta dengan photobooth",
+    src: "/images/galeri/galeri-4.png",
+    alt: "Properti dan booth foto Movement Photobooth",
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=80",
-    alt: "Pasangan berfoto di backdrop bunga",
+    src: "/images/galeri/galeri-5.png",
+    alt: "Tamu menikmati keseruan Movement Photobooth",
   },
   {
     id: "g6",
-    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
-    alt: "Dekorasi meja acara yang elegan",
+    src: "/images/galeri/galeri-6.png",
+    alt: "Kenangan acara bersama Movement Photobooth",
   },
 ];
 
