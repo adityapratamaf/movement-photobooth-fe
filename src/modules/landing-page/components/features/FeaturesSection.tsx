@@ -14,7 +14,7 @@ export function FeaturesSection() {
             <SectionHeading
               align="left"
               eyebrow="Mengapa Memilih Kami"
-              titleBefore="Momen Berharga Jadi "
+              titleBefore="Momen Berkesan "
               highlight="Tak Terlupakan"
             />
             <p className="text-base text-ink-muted lg:text-lg">

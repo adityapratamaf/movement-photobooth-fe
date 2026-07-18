@@ -15,9 +15,9 @@ export function PackagesSection() {
           className="mx-auto"
           eyebrow="Layanan Kami"
           titleBefore="Paket Photobooth "
-          highlight="Terbaik"
-          titleAfter=" Untuk Anda"
-          subtitle="Pilih paket yang sesuai dengan kebutuhan dan budget acara Anda."
+          highlight="Terbaik "
+          titleAfter=" Sesuai Kebutuhan Anda"
+          subtitle=""
         />
 
         <div className="mt-12 grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">

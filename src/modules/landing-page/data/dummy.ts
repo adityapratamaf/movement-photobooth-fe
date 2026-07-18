@@ -37,16 +37,16 @@ export const heroSlides: GalleryImage[] = [
     src: "/images/hero/heros-1.png",
     alt: "Booth foto Movement Photobooth mencetak strip foto instan",
   },
-  {
-    id: "hero-2",
-    src: "/images/hero/heros-2.png",
-    alt: "Movement Photobooth dengan hasil cetak foto di sebuah acara",
-  },
-  {
-    id: "hero-3",
-    src: "/images/hero/heros-3.png",
-    alt: "Booth foto Movement Photobooth siap dipakai di acara",
-  },
+  // {
+  //   id: "hero-2",
+  //   src: "/images/hero/heros-2.png",
+  //   alt: "Movement Photobooth dengan hasil cetak foto di sebuah acara",
+  // },
+  // {
+  //   id: "hero-3",
+  //   src: "/images/hero/heros-3.png",
+  //   alt: "Booth foto Movement Photobooth siap dipakai di acara",
+  // },
 ];
 
 export const features: Feature[] = [
