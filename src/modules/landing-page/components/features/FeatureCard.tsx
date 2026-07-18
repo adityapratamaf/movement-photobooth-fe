@@ -8,10 +8,10 @@ interface FeatureCardProps {
 
 export function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <Card className="flex h-full flex-col items-center gap-3 p-6 text-center">
-      <IconBadge name={feature.icon} className="h-14 w-14" iconClassName="h-7 w-7" />
-      <h3 className="text-base font-semibold text-ink">{feature.title}</h3>
-      <p className="text-sm text-ink-muted">{feature.description}</p>
+    <Card className="flex h-full flex-col items-center gap-4 p-7 text-center">
+      <IconBadge name={feature.icon} className="h-16 w-16" iconClassName="h-8 w-8" />
+      <h3 className="text-lg font-semibold text-ink">{feature.title}</h3>
+      <p className="text-[15px] text-ink-muted">{feature.description}</p>
     </Card>
   );
 }

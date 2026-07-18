@@ -22,7 +22,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "flex flex-col gap-3",
+        "flex flex-col gap-4",
         align === "center" ? "items-center text-center" : "items-start text-left",
         className,
       )}
@@ -33,14 +33,14 @@ export function SectionHeading({
         </span>
       ) : null}
 
-      <h2 className="max-w-2xl text-3xl font-bold leading-tight text-ink sm:text-4xl">
+      <h2 className="max-w-2xl text-4xl font-bold leading-tight text-ink sm:text-5xl">
         {titleBefore}
         {highlight ? <span className="text-brand-500">{highlight}</span> : null}
         {titleAfter}
       </h2>
 
       {subtitle ? (
-        <p className="max-w-xl text-base text-ink-muted">{subtitle}</p>
+        <p className="max-w-xl text-base text-ink-muted lg:text-lg">{subtitle}</p>
       ) : null}
     </div>
   );

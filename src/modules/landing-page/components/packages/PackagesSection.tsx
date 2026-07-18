@@ -10,7 +10,7 @@ export function PackagesSection() {
   return (
     <section id="paket">
       {/* Background pink dinonaktifkan (sebelumnya className="bg-surface-soft") */}
-      <Container className="py-5 lg:py-5">
+      <Container className="py-16 lg:py-20">
         <SectionHeading
           className="mx-auto"
           eyebrow="Layanan Kami"

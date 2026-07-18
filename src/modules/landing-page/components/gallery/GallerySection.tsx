@@ -23,7 +23,7 @@ export function GallerySection() {
 
   return (
     <section id="galeri" className="bg-surface">
-      <Container className="py-5 lg:py-5">
+      <Container className="py-16 lg:py-20">
         <div className="flex flex-col items-center gap-4">
           <SectionHeading
             eyebrow="Galeri"

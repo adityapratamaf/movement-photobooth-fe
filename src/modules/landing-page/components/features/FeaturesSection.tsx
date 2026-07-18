@@ -8,7 +8,7 @@ import { features, brand } from "@/modules/landing-page/data/dummy";
 export function FeaturesSection() {
   return (
     <section id="layanan" className="bg-surface">
-      <Container className="py-5 lg:py-5">
+      <Container className="py-16 lg:py-20">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <Reveal className="flex flex-col items-start gap-6 lg:col-span-3">
             <SectionHeading
@@ -17,7 +17,7 @@ export function FeaturesSection() {
               titleBefore="Kami Membuat Momen Berharga Menjadi "
               highlight="Tak Terlupakan"
             />
-            <p className="text-base text-ink-muted">
+            <p className="text-base text-ink-muted lg:text-lg">
               Dengan pengalaman bertahun-tahun, kami siap menghadirkan keseruan photobooth
               yang profesional dan penuh kenangan di setiap acara.
             </p>
