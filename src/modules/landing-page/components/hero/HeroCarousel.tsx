@@ -43,7 +43,8 @@ export function HeroCarousel({ slides, interval = 10000 }: HeroCarouselProps) {
                 fill
                 priority={index === 0}
                 sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-contain object-right"
+                // className="object-contain object-right"
+                className="object-cover object-right"
               />
             </div>
           ))}

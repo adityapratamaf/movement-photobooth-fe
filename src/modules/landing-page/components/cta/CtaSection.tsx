@@ -22,7 +22,9 @@ export function CtaSection() {
             <div className="relative flex flex-col items-center gap-6 text-center lg:flex-row lg:justify-between lg:text-left">
               <div className="flex flex-col gap-2">
                 <h2 className="max-w-xl text-3xl font-bold text-white sm:text-4xl">
-                  Siap Membuat Acara Anda Semakin Berkesan?
+                  Biar Acara Makin Berkesan,
+                  <br />
+                  Semua Tamu Pulang Bawa Kenangan.
                 </h2>
                 <p className="max-w-lg text-base text-white/80 sm:text-lg">
                   Hubungi kami sekarang untuk konsultasi gratis dan penawaran terbaik.
