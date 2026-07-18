@@ -35,6 +35,9 @@
   --color-ink-muted: #64748b;
   --color-surface: #ffffff;
   --color-surface-soft: #f1f6ea;
+
+  /* Warm off-white that matches the hero photo backgrounds */
+  --color-hero-bg: #f5f2ec;
 }
 
 body {

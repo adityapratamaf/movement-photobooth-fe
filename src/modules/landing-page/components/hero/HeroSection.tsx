@@ -9,10 +9,10 @@ import { heroHighlights, heroSlides, brand } from "@/modules/landing-page/data/d
 
 export function HeroSection() {
   return (
-    <section id="beranda" className="relative overflow-hidden bg-surface">
-      <Container className="relative">
-        <div className="grid items-center gap-10 py-5 lg:min-h-[34rem] lg:grid-cols-2 lg:py-5">
-          <Reveal className="flex flex-col gap-6">
+    <section id="beranda" className="relative overflow-hidden bg-hero-bg">
+      <Container className="relative z-10">
+        <div className="grid items-center gap-10 py-5 lg:min-h-[47rem] lg:grid-cols-2 lg:py-5">
+          <Reveal className="flex flex-col gap-6 lg:max-w-lg">
             <span className="text-sm font-semibold uppercase tracking-widest text-brand-500">
               Movement Photobooth
             </span>
@@ -49,11 +49,11 @@ export function HeroSection() {
         </div>
       </Container>
 
-      <div className="relative mt-6 h-72 w-full sm:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-auto lg:w-[52%]">
+      <div className="relative mt-6 h-72 w-full sm:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-auto lg:w-[54%]">
         <HeroCarousel slides={heroSlides} />
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-y-0 left-0 hidden w-24 bg-gradient-to-r from-surface to-transparent lg:block"
+          className="pointer-events-none absolute inset-y-0 left-0 hidden w-40 bg-gradient-to-r from-hero-bg via-hero-bg/60 to-transparent lg:block"
         />
       </div>
     </section>
