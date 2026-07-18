@@ -8,9 +8,9 @@ interface FeatureCardProps {
 
 export function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <Card className="flex flex-col gap-4">
-      <IconBadge name={feature.icon} />
-      <h3 className="text-lg font-semibold text-ink">{feature.title}</h3>
+    <Card className="flex h-full flex-col items-center gap-3 p-6 text-center">
+      <IconBadge name={feature.icon} className="h-14 w-14" iconClassName="h-7 w-7" />
+      <h3 className="text-base font-semibold text-ink">{feature.title}</h3>
       <p className="text-sm text-ink-muted">{feature.description}</p>
     </Card>
   );
