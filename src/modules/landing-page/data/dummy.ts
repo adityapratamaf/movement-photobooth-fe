@@ -46,6 +46,16 @@ export const heroSlides: GalleryImage[] = [
   //   src: "/images/hero/heros-3.png",
   //   alt: "Booth foto Movement Photobooth siap dipakai di acara",
   // },
+  {
+    id: "hero-4",
+    src: "/images/hero/heros-4.png",
+    alt: "Booth foto Movement Photobooth mencetak strip foto polaroid",
+  },
+    {
+    id: "hero-5",
+    src: "/images/hero/heros-6.png",
+    alt: "Booth foto Movement Photobooth membuat marchandise souvenir",
+  },
 ];
 
 export const features: Feature[] = [
