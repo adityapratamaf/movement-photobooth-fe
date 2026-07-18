@@ -27,8 +27,26 @@ export const navItems: NavItem[] = [
 export const heroHighlights: FeatureHighlight[] = [
   { icon: "camera", label: "Kualitas Foto HD" },
   { icon: "printer", label: "Cetak Instan Unlimited" },
-  { icon: "sparkling", label: "Properti Seru & Lengkap" },
-  { icon: "time", label: "Setup Cepat & Praktis" },
+  { icon: "gift", label: "Properti Seru & Lengkap" },
+  { icon: "tools", label: "Setup Cepat & Praktis" },
+];
+
+export const heroSlides: GalleryImage[] = [
+  {
+    id: "hero-1",
+    src: "/images/hero/hero-1.png",
+    alt: "Booth foto Movement Photobooth mencetak strip foto instan",
+  },
+  {
+    id: "hero-2",
+    src: "/images/hero/hero-2.png",
+    alt: "Movement Photobooth dengan hasil cetak foto di sebuah acara",
+  },
+  {
+    id: "hero-3",
+    src: "/images/hero/hero-3.png",
+    alt: "Booth foto Movement Photobooth siap dipakai di acara",
+  },
 ];
 
 export const features: Feature[] = [

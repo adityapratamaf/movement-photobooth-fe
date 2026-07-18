@@ -8,6 +8,7 @@ export type IconName =
   | "time"
   | "printer"
   | "sparkling"
+  | "tools"
   | "customer-service"
   | "instagram"
   | "facebook"

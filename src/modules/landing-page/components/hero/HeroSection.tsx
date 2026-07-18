@@ -1,30 +1,15 @@
-import Image from "next/image";
-import { RiCalendarLine } from "@remixicon/react";
+import { RiCalendarLine, RiGiftLine } from "@remixicon/react";
 
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/shared/Reveal";
 import { HeroHighlight } from "@/modules/landing-page/components/hero/HeroHighlight";
-import { heroHighlights, brand } from "@/modules/landing-page/data/dummy";
-
-const heroImage =
-  "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80";
+import { HeroCarousel } from "@/modules/landing-page/components/hero/HeroCarousel";
+import { heroHighlights, heroSlides, brand } from "@/modules/landing-page/data/dummy";
 
 export function HeroSection() {
   return (
-    <section id="beranda" className="relative overflow-hidden bg-surface-soft">
-      <div className="absolute inset-y-0 right-0 hidden w-[52%] lg:block">
-        <Image
-          src={heroImage}
-          alt="Movement Photobooth di sebuah acara"
-          fill
-          priority
-          sizes="55vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-surface-soft via-surface-soft/20 to-transparent" />
-      </div>
-
+    <section id="beranda" className="relative overflow-hidden bg-surface">
       <Container className="relative">
         <div className="grid items-center gap-10 py-5 lg:min-h-[34rem] lg:grid-cols-2 lg:py-5">
           <Reveal className="flex flex-col gap-6">
@@ -48,7 +33,7 @@ export function HeroSection() {
                 Cek Tanggal
               </Button>
               <Button href="#paket" variant="outline">
-                <RiCalendarLine className="h-5 w-5" aria-hidden />
+                <RiGiftLine className="h-5 w-5" aria-hidden />
                 Lihat Paket
               </Button>
             </div>
@@ -61,21 +46,16 @@ export function HeroSection() {
               ))}
             </ul>
           </Reveal>
-
-          <div className="lg:hidden">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
-              <Image
-                src={heroImage}
-                alt="Movement Photobooth di sebuah acara"
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover object-center"
-              />
-            </div>
-          </div>
         </div>
       </Container>
+
+      <div className="relative mt-6 h-72 w-full sm:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:mt-0 lg:h-auto lg:w-[52%]">
+        <HeroCarousel slides={heroSlides} />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 left-0 hidden w-24 bg-gradient-to-r from-surface to-transparent lg:block"
+        />
+      </div>
     </section>
   );
 }
