@@ -1,0 +1,42 @@
+import {
+  RiCameraLine,
+  RiHeartLine,
+  RiTeamLine,
+  RiStarLine,
+  RiShieldCheckLine,
+  RiGiftLine,
+  RiTimeLine,
+  RiPrinterLine,
+  RiSparklingLine,
+  RiCustomerService2Line,
+  RiInstagramLine,
+  RiFacebookFill,
+  RiYoutubeLine,
+  RiTiktokFill,
+  RiPhoneLine,
+  RiMailLine,
+  RiMapPinLine,
+  type RemixiconComponentType,
+} from "@remixicon/react";
+
+import type { IconName } from "@/modules/landing-page/types";
+
+export const iconMap: Record<IconName, RemixiconComponentType> = {
+  camera: RiCameraLine,
+  heart: RiHeartLine,
+  team: RiTeamLine,
+  star: RiStarLine,
+  shield: RiShieldCheckLine,
+  gift: RiGiftLine,
+  time: RiTimeLine,
+  printer: RiPrinterLine,
+  sparkling: RiSparklingLine,
+  "customer-service": RiCustomerService2Line,
+  instagram: RiInstagramLine,
+  facebook: RiFacebookFill,
+  youtube: RiYoutubeLine,
+  tiktok: RiTiktokFill,
+  phone: RiPhoneLine,
+  mail: RiMailLine,
+  "map-pin": RiMapPinLine,
+};
