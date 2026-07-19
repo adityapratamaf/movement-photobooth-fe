@@ -34,8 +34,8 @@ export const heroHighlights: FeatureHighlight[] = [
 
 export const heroSlides: GalleryImage[] = [
   {
-    id: "hero-7",
-    src: "/images/hero/heros-7.png",
+    id: "hero-10",
+    src: "/images/hero/heros-10.png",
     alt: "Booth foto Movement Photobooth mencetak strip foto instan",
   },
   // {
