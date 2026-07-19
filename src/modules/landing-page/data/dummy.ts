@@ -34,8 +34,8 @@ export const heroHighlights: FeatureHighlight[] = [
 
 export const heroSlides: GalleryImage[] = [
   {
-    id: "hero-1",
-    src: "/images/hero/heros-1.png",
+    id: "hero-7",
+    src: "/images/hero/heros-7.png",
     alt: "Booth foto Movement Photobooth mencetak strip foto instan",
   },
   // {
@@ -49,13 +49,13 @@ export const heroSlides: GalleryImage[] = [
   //   alt: "Booth foto Movement Photobooth siap dipakai di acara",
   // },
   {
-    id: "hero-4",
-    src: "/images/hero/heros-4.png",
+    id: "hero-8",
+    src: "/images/hero/heros-8.png",
     alt: "Booth foto Movement Photobooth mencetak strip foto polaroid",
   },
     {
-    id: "hero-5",
-    src: "/images/hero/heros-6.png",
+    id: "hero-9",
+    src: "/images/hero/heros-9.png",
     alt: "Booth foto Movement Photobooth membuat marchandise souvenir",
   },
 ];
@@ -215,6 +215,13 @@ export const galleryImages: GalleryPhoto[] = [
   {
     id: "g10",
     src: "/images/galeri/galeris-10.png",
+    alt: "Kenangan acara bersama Movement Photobooth a",
+    width: 1024,
+    height: 1536,
+  },
+  {
+    id: "g11",
+    src: "/images/galeri/galeris-11.png",
     alt: "Kenangan acara bersama Movement Photobooth a",
     width: 1024,
     height: 1536,

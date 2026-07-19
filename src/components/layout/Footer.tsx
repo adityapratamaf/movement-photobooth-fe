@@ -74,7 +74,7 @@ export function Footer() {
             © {new Date().getFullYear()} {brand.name} {brand.suffix}. All rights reserved.
           </p>
           <span className="flex items-center gap-1.5 text-xs text-ink-muted">
-            Digital Experience in Partnership with 
+            Digital Experience in Partnership with
             <Image
               src="/images/general/logo-mediaine.png"
               alt="Mediaine"
